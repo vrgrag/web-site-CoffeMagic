@@ -1,0 +1,18 @@
+.order { padding: 24px 0 56px; }
+.order__form { margin-top: 12px; display: grid; gap: 14px; max-width: 640px; }
+.order__row { display: grid; gap: 6px; }
+.order__label { font-weight: 600; }
+.order__input, .order__select {
+  background: #161515; border:1px solid rgba(255,255,255,.12);
+  border-radius: 12px; padding: 12px 14px; color: var(--color-text);
+}
+.order__input--error { border-color: #e86b6b; }
+.order__hint { font-size: 12px; color: #e86b6b; }
+.order__segmented { display:flex; gap:8px; flex-wrap: wrap; }
+.order__seg { border:1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 8px 12px; cursor: pointer; opacity: .9; }
+.order__seg input { display: none; }
+.order__seg--active { background: rgba(197,143,92,.18); border-color: var(--color-accent); opacity: 1; }
+.order__actions { margin-top: 4px; }
+.order__status { margin-top: 8px; padding: 12px 14px; border-radius: 12px; }
+.order__status--ok { background: rgba(96,197,92,.15); border:1px solid rgba(96,197,92,.35); }
+.order__status--err { background: rgba(232,107,107,.12); border:1px solid rgba(232,107,107,.35); }

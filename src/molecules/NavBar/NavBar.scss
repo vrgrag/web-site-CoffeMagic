@@ -1,0 +1,16 @@
+.nav { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(15,14,14,.6); z-index: 10; }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; } /* ниже Header */
+.nav__menu { display: none; gap: 16px; }
+.nav__link { color: var(--color-text); text-decoration: none; opacity: .9; padding: 6px 0; }
+.nav__link.active { opacity: 1; border-bottom: 2px solid var(--color-accent); }
+.nav__logo { text-decoration: none; }
+.nav__actions { display:flex; align-items:center; gap: 12px; }
+.nav__cta { text-decoration: none; }
+.nav__auth { color: var(--color-text); text-decoration: none; opacity: .9; }
+.nav__auth:hover { opacity: 1; }
+.nav__logout { background: transparent; border: none; color: var(--color-text); cursor: pointer; opacity: .8; }
+.nav__logout:hover { opacity: 1; }
+
+@media (min-width: 768px) {
+  .nav__menu { display: flex; }
+}

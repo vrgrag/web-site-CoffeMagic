@@ -1,0 +1,30 @@
+/* Глобальные стили проекта. Здесь можно подключить шрифты и переменные. */
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter');
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #0f0e0e;
+  --color-text: #f7f3f0;
+  --color-accent: #c58f5c;
+  --container: 1200px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Inter, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 16px;
+}

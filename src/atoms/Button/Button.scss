@@ -1,0 +1,21 @@
+/* БЭМ: .button как блок, модификаторы через -- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform .1s ease, opacity .2s ease;
+}
+.button:hover { transform: translateY(-1px); }
+.button:active { transform: translateY(0); opacity: .9; }
+
+.button--primary { background: var(--color-accent); color: #1b120c; }
+.button--ghost { background: transparent; border: 1px solid var(--color-accent); color: var(--color-accent); }
+
+.button--sm { padding: 8px 12px; font-size: 14px; }
+.button--md { padding: 12px 18px; font-size: 16px; }
+.button--lg { padding: 14px 22px; font-size: 18px; }

@@ -1,0 +1,8 @@
+.menu { padding: 28px 0 56px; }
+.menu__grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.menu__actions { margin-top: 10px; }
